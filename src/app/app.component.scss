@@ -1,0 +1,33 @@
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.app-label {
+  display: block;
+  margin: auto;
+}
+
+.mat-sidenav-container {
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+.mat-sidenav {
+  padding: 20px 5px;
+}
+
+.content {
+  margin: 20px;
+}
+
+.page-link {
+  min-width: 150px;
+
+  &-selected {
+    background-color: #3f51b5;
+    color: white;
+  }
+}

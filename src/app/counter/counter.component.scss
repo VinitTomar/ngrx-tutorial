@@ -1,0 +1,17 @@
+.counts {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  button {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="mat-elevation-z5">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a mat-button href="/" routerLink="/" class="app-label">
+    <h3> NgRx tutorial </h3>
+  </a>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <a mat-stroked-button href="/counter" routerLink="/counter" routerLinkActive="page-link-selected" class="page-link">Counter</a>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

@@ -1,20 +1,16 @@
 <h1>
   <a href="https://ngrx.io/guide/store" target="_blank">@ngrx/store</a>
 </h1>
-
 <mat-card>
   <mat-card-header>
-      <mat-card-title>Counter</mat-card-title>
+    <mat-card-title>Counter</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <div class="counts">Current Count: {{count$ | async}}</div>
-
     <div class="btn-row">
       <button mat-flat-button color="primary" (click)="increment()">Increment</button>
-
       <button mat-flat-button color="accent" (click)="decrement()">Decrement</button>
-
-      <button mat-raised-button (click)="reset()" color="warn">Reset</button>
+      <button mat-flat-button (click)="reset()" color="warn">Reset</button>
     </div>
   </mat-card-content>
 </mat-card>

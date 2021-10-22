@@ -3,8 +3,8 @@ import { StoreModule } from '@ngrx/store';
 import { CounterRoutingModule } from './store-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CounterComponent } from './counter.component';
-import { counterReducer } from './counter.reducer';
+import { CounterComponent } from './counter/counter.component';
+import { counterReducer } from './counter/counter.reducer';
 import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({

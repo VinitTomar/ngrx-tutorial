@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'counter',
-    loadChildren: () => import('./counter/counter.module').then(m => m.CounterModule)
+    path: '',
+    redirectTo: 'store',
+    pathMatch: 'full'
+  },
+  {
+    path: 'store',
+    loadChildren: () => import('./store/store.module').then(m => m.StoreExample)
   }
 ];
 

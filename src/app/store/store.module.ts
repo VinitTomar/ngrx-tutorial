@@ -1,6 +1,6 @@
 import { MatCardModule } from '@angular/material/card';
 import { StoreModule } from '@ngrx/store';
-import { CounterRoutingModule } from './counter-routing.module';
+import { CounterRoutingModule } from './store-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CounterComponent } from './counter.component';
@@ -17,4 +17,4 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   declarations: [CounterComponent]
 })
-export class CounterModule { }
+export class StoreExample { }

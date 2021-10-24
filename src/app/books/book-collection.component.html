@@ -1,21 +1,13 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Book collection</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <div
-    class="book-item"
-    *ngFor="let book of books"
-  >
-    <p>{{book?.volumeInfo?.title}}</p><span> by {{book?.volumeInfo?.authors}}</span>
-    <button
-      (click)="remove.emit(book?.id)"
-      data-test="remove-button"
-    >Remove from Collection</button>
-  </div>
-  </mat-card-content>
-</mat-card>
+<h2>Collection</h2>
 
-
-
-
+<mat-list>
+  <mat-list-item *ngFor="let book of books">
+    <div>
+      <p matLine>{{book?.volumeInfo?.title}}</p>
+      <span matLine> by {{book?.volumeInfo?.authors}}</span>
+    </div>
+    <button mat-flat-button color="warn" (click)="remove.emit(book?.id)" data-test="remove-button">
+      Remove from Collection
+    </button>
+  </mat-list-item>
+</mat-list>

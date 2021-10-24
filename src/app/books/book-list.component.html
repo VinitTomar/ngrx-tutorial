@@ -1,14 +1,13 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Book list</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <div class="book-item" *ngFor="let book of books" >
-      <p>{{book.volumeInfo.title}}</p>
-      <span> by {{book.volumeInfo.authors}}</span>
-      <button (click)="add.emit(book.id)" data-test="add-button">
-        Add to Collection
-      </button>
+<h2>List</h2>
+
+<mat-list>
+  <mat-list-item *ngFor="let book of books">
+    <div>
+      <p matLine>{{book.volumeInfo.title}}</p>
+      <span matLine> by {{book.volumeInfo.authors}}</span>
     </div>
-  </mat-card-content>
-</mat-card>
+    <button mat-flat-button color="accent" (click)="add.emit(book.id)" data-test="add-button">
+      Add to Collection
+    </button>
+  </mat-list-item>
+</mat-list>

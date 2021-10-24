@@ -17,7 +17,6 @@ import { CounterComponent } from './counter.component';
     StoreModule.forFeature('count', counterReducer),
     CommonModule,
     CounterRoutingModule,
-    MatCardModule,
     MatButtonModule
   ]
 })

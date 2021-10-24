@@ -21,7 +21,15 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="content">
-      <router-outlet></router-outlet>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{cardTitle | async}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <router-outlet></router-outlet>
+        </mat-card-content>
+      </mat-card>
+
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

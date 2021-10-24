@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Book list</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="book-item" *ngFor="let book of books" >
+      <p>{{book.volumeInfo.title}}</p>
+      <span> by {{book.volumeInfo.authors}}</span>
+      <button (click)="add.emit(book.id)" data-test="add-button">
+        Add to Collection
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

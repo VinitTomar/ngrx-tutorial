@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CounterComponent } from './counter/counter.component';
+import { BookRootComponent } from './book-root.component';
 
 const routes: Routes = [
-  {
-    path: '', component: CounterComponent
-  }
-]
+  {path: '', component: BookRootComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CounterRoutingModule { }
+export class BooksRoutingModule { }
